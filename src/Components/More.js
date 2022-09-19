@@ -68,7 +68,7 @@ const More = () => {
      <h4 className="md:mr-3 md:py-2 mb-4 font-medium">Border Countries:</h4>
       {border ? <div className=" dark:bg-[#212E37] grid grid-cols-5 gap-3"> 
       { detail.borders.map((borde,index) => <p key = {index} className='px-4 py-2 text-center shadow-lg bg-[#fff] lowercase dark:bg-[#2B3743]'>{ borde }</p>)} 
-      </div> : <p>Border Not available</p>}
+      </div> : <p className="md:py-2">Border Not available</p>}
        </div>
      </div>
     </div>:<p className='w-full text-center mt-10 font-light'>please wait a minute</p> }

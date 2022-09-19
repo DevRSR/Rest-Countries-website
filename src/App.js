@@ -23,7 +23,7 @@ function App() {
   
   return (
   <Router>
-    <div className='dark:bg-[#212E37] dark:text-[#fff] h-screen' >
+    <div className='dark:bg-[#212E37] dark:text-[#fff] h-screen w-screen' >
       <Header />
       <Switch>
        <Route path="/" exact>
