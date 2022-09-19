@@ -18,7 +18,7 @@ function App() {
     setDetails(miniData);
     setLoading(true)
   })
-  .catch(err => alert(err))
+  .catch(err => console.log(err))
   })
   
   return (

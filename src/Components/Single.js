@@ -14,7 +14,7 @@ const Single = () => {
     setDetail(data);
     setLoading(true)
   })
-  .catch(err => alert(err))
+  .catch(err => console.log(err))
   })
   return (
     <div className="grid md:grid-cols-3 gap-12 px-3 md:px-8 dark:bg-[#212E37]">
