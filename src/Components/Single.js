@@ -18,7 +18,7 @@ const Single = () => {
   })
   return (
     <div className="grid md:grid-cols-3 gap-12 px-3 md:px-8 dark:bg-[#212E37]">
-      { isLoading ? details.map((detail,index) => <Card key={ index } detail={ detail } id={ detail.name } />) : <div className='w-scree mt-32 font-light mx-auto dark:text-[#fff]'>Loading....</div> }
+      { isLoading ? details.map((detail,index) => <Card key={ index } detail={ detail } id={ detail.name } />) : <div className='w-screen mt-32 font-light text-center mx-auto dark:text-[#fff]'>Loading....</div> }
       </div>
     )
 }
