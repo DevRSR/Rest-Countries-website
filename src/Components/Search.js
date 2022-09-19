@@ -16,17 +16,14 @@ const Search = () => {
     let input = document.querySelector('input');
     setName(input.value)
   }
-  function directTo () {
-    window.location.href = `https://myrestcountriesweb.netlify.app/${ name }`
-  }
   
   return (
      <div className="flex flex-col md:flex-row items-start md:items-center justify-between py-4 w-full px-3 md:px-5 mb-10">
       <div className="flex items-center justify-start shadow-2xl w-full md:w-[250px] px-5 rounded-lg bg-[#fff] dark:bg-[#2B3743]">
        <FontAwesomeIcon icon={faSearch} />
-       <form onSubmit={ directTo }>
+       <Link to={`/name/${name}`}>
         <input onChange = {naming} className="border-none p-4 focus:outline-none dark:bg-[#2B3743] dark:text-[#fff]" type="text" placeholder="Search for country..." />
-       </form>
+       </Link>
       </div>
       <div className="relative mt-4 dark:bg-[#212E37] dark:text-[#fff]">
        <div onClick={ show } className="flex items-center justify-between p-4 w-full shadow-2xl rounded-lg bg-[#fff] dark:bg-[#2B3743] dark:text-[#fff]">
