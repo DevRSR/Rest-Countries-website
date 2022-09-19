@@ -32,7 +32,7 @@ function App() {
        { isLoading ? details.map((detail,index) => <Card key={ index } detail={ detail } id={ detail.name } />) : <div className='w-screen mt-32 font-light text-center mr-24 dark:text-[#fff]'>Loading....</div> }
          </div>
        </Route>
-       <Route path="/name/:name" exact>
+       <Route path="/:name" exact>
         <Search />
         <Single />
        </Route>
