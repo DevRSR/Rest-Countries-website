@@ -17,7 +17,7 @@ const Search = () => {
     setName(input.value)
   }
   function directTo () {
-    window.location.href = `/name/${ name }`
+    window.location.href = `https://myrestcountriesweb.netlify.app/name/${ name }`
   }
   
   return (
