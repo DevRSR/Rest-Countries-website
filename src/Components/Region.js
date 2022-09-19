@@ -21,8 +21,8 @@ const Region = () => {
   return (
     <div>
      <Search />
-      <div className="grid md:grid-cols-3 gap-4 px-3 md:px-5 md:mx-auto dark:bg-[#212E37] dark:text-[#fff]">
-     { isLoading ? details.map((detail,index) => <Card key={index} detail={ detail } id={ detail.name } />) : <div className='w-screen mt-10 font-light text-center mx-auto'>Loading....</div> }
+      <div className="grid md:grid-cols-3 gap-12 px-3 md:px-8 dark:bg-[#212E37]">
+     { isLoading ? details.map((detail,index) => <Card key={index} detail={ detail } id={ detail.name } />) : <div className='w-screen mt-10 font-light text-cenmx-auto'>Loading....</div> }
          </div>
       </div>
     )
