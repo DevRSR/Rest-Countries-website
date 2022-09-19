@@ -1,0 +1,31 @@
+import {useState, useEffect} from 'react';
+import { useParams } from 'react-router-dom';
+import Search from './Search';
+import Card from './Card';
+
+const Region = () => {
+  const { term } = useParams();
+  const [details,setDetails] = useState([])
+  const [isLoading,setLoading] = useState(false)
+  useEffect(() => {
+    fetch(`https://restcountries.com/v2/region/${ term }?fields=name,capital,flags,population,region`)
+  .then(res => res.json())
+  .then(data => {
+    setDetails(data);
+    setLoading(true)
+  })
+  .catch(err => alert(err))
+  },[term])
+  
+  
+  return (
+    <div>
+     <Search />
+      <div className="grid md:grid-cols-3 gap-4 px-3 md:px-5 md:mx-auto dark:bg-[#212E37] dark:text-[#fff]">
+     { isLoading ? details.map((detail,index) => <Card key={index} detail={ detail } id={ detail.name } />) : <div className='w-screen mt-10 font-light mx-auto'>Loading....</div> }
+         </div>
+      </div>
+    )
+}
+
+export default Region;
