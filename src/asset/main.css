@@ -565,10 +565,6 @@ video {
   grid-column-start: 1;
 }
 
-.col-start-4 {
-  grid-column-start: 4;
-}
-
 .col-end-4 {
   grid-column-end: 4;
 }
@@ -614,10 +610,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mr-32 {
-  margin-right: 8rem;
 }
 
 .mr-3 {
