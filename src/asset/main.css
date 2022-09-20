@@ -561,6 +561,18 @@ video {
   left: 0px;
 }
 
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-4 {
+  grid-column-start: 4;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -602,6 +614,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mr-32 {
+  margin-right: 8rem;
 }
 
 .mr-3 {
@@ -682,10 +698,6 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .rounded-lg {
@@ -823,11 +835,6 @@ video {
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .md\:mb-10 {
